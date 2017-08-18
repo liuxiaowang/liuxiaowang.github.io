@@ -1,0 +1,365 @@
+*{
+    margin:0;padding:0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 383464 */
+    src: url('//at.alicdn.com/t/font_383464_ax96cyjod48ia4i.eot');
+    src: url('//at.alicdn.com/t/font_383464_ax96cyjod48ia4i.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_383464_ax96cyjod48ia4i.woff') format('woff'),
+    url('//at.alicdn.com/t/font_383464_ax96cyjod48ia4i.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_383464_ax96cyjod48ia4i.svg#iconfont') format('svg');
+}
+
+/*top开始*/
+#menu{
+    width: 100%;
+    height:51px;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    left:0;
+    top:0;
+    background: rgba(0,0,0,0.5);
+    z-index:222;
+}
+.topinner{
+    height:50px;
+}
+.logo{
+    float: left;
+}
+.logoinner{
+    margin:5px 5px;
+    font-size: 30px;
+    color:#fff;
+    font-weight: bold;
+    position: relative;
+    padding-left: 30px;
+}
+.logoinner>div{
+    font-family: "iconfont";
+    font-size: 26px;
+    float: left;
+    font-weight: normal;
+    position: absolute;
+    top:-5px;
+    left:0;
+}
+.topinner ul{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.topinner ul li>a{
+    padding:10px 15px;
+    line-height: 30px;
+    color:#fff;
+}
+.bg1{
+    background-image: url(../img/158baf73ce9af05f23152ce85e61973d1c28228b2ff2b-IsqD5x_fw658.jpg);
+    background-size: cover;
+}
+.bg2{
+    background-image:url(../img/14.jpg);
+    background-size: contain;
+}
+.text1{
+    width:100%;
+    height: auto;
+    color:#fff;
+    font-size: 38px;
+    display: none;
+}
+.box1{
+    background: url(../img/13.jpg) no-repeat center;
+    position: relative;
+}
+.box2{
+    background: url(../img/2.jpg) no-repeat center;
+    position: relative;
+}
+.box3{
+    background: url(../img/3.jpg) no-repeat center;
+    position: relative;
+}
+
+.bannertu{
+    left:0;
+    top:0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index:2;
+    /*position:relative;*/
+}
+
+.List{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.item{
+    width: 20%;
+    height: 100%;
+    /*background: red;*/
+    display: none;
+}
+
+@keyframes left {
+    0%{
+        transform: translate3d(-400px,0,0);
+    }
+    100%{
+        transform:translate3d(0px,0,0);
+    }
+}
+.itemleft{
+    animation: left 1s ease-in;
+    display: block;
+}
+@keyframes leftOut {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform:translate3d(-400px,0,0);
+    }
+}
+.itemleftOut{
+    animation: leftOut 0.5s ease-in forwards;
+    display: block;
+}
+@keyframes right {
+    0%{
+        transform: translate3d(400px,0,0);
+    }
+    100%{
+        transform:translate3d(0px,0,0);
+    }
+}
+.itemright{
+    animation: right 1s ease-in;
+    display: block;
+}
+@keyframes rightOut {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform:translate3d(400px,0,0);
+    }
+}
+.itemrightOut{
+    animation: rightOut 0.5s ease-in forwards;
+    display: block;
+}
+@keyframes top {
+    0%{
+        transform: translate3d(0,-400px,0);
+    }
+    100%{
+        transform:translate3d(0px,0,0);
+    }
+}
+.itemtop{
+    animation: top 1s ease-in;
+    display: block;
+}
+@keyframes topOut {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform:translate3d(0,-400px,0);
+    }
+}
+.itemtopOut{
+    animation: topOut 0.5s ease-in forwards;
+    display: none;
+}
+@keyframes bottom {
+    0%{
+        transform: translate3d(0,400px,0);
+    }
+    100%{
+        transform:translate3d(0px,0,0);
+    }
+}
+.itembottom{
+    animation: bottom 1s ease-in;
+    display: block;
+}
+@keyframes bottomOut {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform:translate3d(0,400px,0);
+    }
+}
+.itembottomOut{
+    animation: bottomOut 0.5s ease-in forwards;
+    display: none;
+}
+.item h2{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: #FFF;
+}
+.img1{
+    width: 100%;
+    height: 80%;
+    background:url(../img/i1.jpg) no-repeat;
+    background-size:cover;
+}
+.img2{
+    width: 100%;
+    height: 80%;
+    background:url(../img/i2.jpg) no-repeat;
+    background-size:cover;
+}
+.img3{
+    width: 100%;
+    height: 80%;
+    background:url(../img/i3.jpg) no-repeat;
+    background-size:cover;
+}
+.img4{
+    width: 100%;
+    height: 80%;
+    background:url(../img/i4.jpg) no-repeat;
+    background-size:cover;
+}
+
+
+
+
+.con{
+    padding:100px 0;
+    background:#fff;
+}
+.row1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.row>p{
+    font-size: 26px;
+    color:#000;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+/*.row>p:before{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background: #000;
+}*/
+.row>p>span{
+    background: #ccc;
+    position: relative;
+    z-index:2;
+    font-size: 30px;
+    font-weight: bold;
+    padding:5px 10px;
+}
+.row>p:after{
+    content: "";
+    width: 300px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.col-md-4{
+    margin-bottom: 50px;
+}
+canvas{
+    display: block;
+    float: left;
+}
+.tu1{
+    border: 2px solid #8A0000;
+    background: #CC0000;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    float: left;
+    border-radius: 50%;
+}
+.jieshao{
+    margin-left: 110px;
+}
+.jieshao>h4{
+    font-weight: 600;
+    font-size: 21px;
+    margin: 5px 0 10px;
+}
+.jieshao>p{
+    font-size: 13px;
+    margin: 0;
+}
+.info{
+    overflow: hidden;
+    transition: all 1s;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+}
+.image .img{
+    /*position: absolute;*/
+    background: url(../img/dff55bc6dfda8a909a1f45d49cc9aefb85a3071a2754c-koKSKW_fw658.jpg);
+    background-size: cover;
+    width: 263px;
+    height: 263px;
+}
+/*.info:hover .mask{*/
+    /*opacity: 1;*/
+/*}*/
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:22;
+    left: 0;
+    top: 0;
+    background: rgba(0, 14, 16, 0.5);
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
+    display: none;
+}
+.mask.active{
+    display: block;
+}
+.mask p{
+    /*opacity: 0;*/
+    color: #fff;
+    display: none;
+}
+/*.mask p:first-child{
+    position: absolute;
+    top:0;
+    left:0;
+}*/
+.mask p:last-child{
+    position: absolute;
+    bottom:0;
+    left:0;
+}
