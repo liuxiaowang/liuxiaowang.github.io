@@ -831,7 +831,6 @@ img#home_photo2 {
 }
 /* demo */
 #demo_content_list {
-    margin: 50px auto 20px;
     width: 1000px;
     height: 200px;
 }
@@ -932,7 +931,6 @@ img#home_photo2 {
 }
 #demo_info {
     clear: both;
-    padding-top: 50px;
     border-top: 1px solid #f00;
     width: 950px;
     margin: 0 auto;
