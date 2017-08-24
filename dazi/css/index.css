@@ -1,0 +1,75 @@
+html,body{
+    height: 100%;
+    margin:0;
+}
+@keyframes yidong {
+    0%{
+        left:-20px;
+    }
+    100%{
+        left:0;
+    }
+}
+.main{
+    width: 1000px;
+    height: 100%;
+    background: #ccc;
+    margin:0 auto;
+    position: relative;
+    left:0;
+    animation: yidong linear 1s infinite alternate;
+}
+.left{
+    width: 800px;
+    height: 100%;
+    background: #fd7aff;
+    float: left;
+}
+.right{
+    width: 200px;
+    height: 100%;
+    background: #53c5c6;
+    float: left;
+}
+.show{
+    width: 180px;
+    height: 40px;
+    margin:30px auto;
+    border:1px solid #ccc;
+}
+.show .title{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+}
+.show .con{
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    background: #fff;
+    color:red;
+}
+.btn{
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    border:1px solid #000;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    color: #000;
+    margin:30px auto;
+    cursor: pointer;
+}
+.letter{
+    width: 80px;
+    height:80px;
+    border:1px solid #fff;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color:#fff;
+}

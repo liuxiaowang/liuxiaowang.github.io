@@ -1,0 +1,357 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.bannerbox{
+    width: 100%;
+    height:600px;
+    position: relative;
+}
+.tbox{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    position: relative;
+    z-index: 10;
+}
+.btitle{
+    width: 1200px;
+    height: 114px;
+    position: absolute;
+    left:0;
+    top:150px;
+    text-align: center;
+    line-height: 114px;
+    /*float: left;*/
+}
+.btitle span{
+    line-height: 220%;
+    color:#fff;
+}
+.btitle span strong{
+    letter-spacing: 2px;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 220%;
+}
+.wenzi{
+    width: 100%;
+    line-height: 140%;
+    position: absolute;
+    left:0;
+    top:264px;
+}
+.wenzi1{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:294px;
+    text-align: center;
+}
+.wenzi2{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:324px;
+    text-align: center;
+}
+.wenzi span{
+    color: rgb(255, 255, 255);
+    line-height: 190%;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.banner{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.banner li{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 600px;
+    /*opacity: 0;*/
+}
+.banner li.active{
+    opacity: 1;
+}
+
+.banner li img{
+    width: 100%;
+    height: 600px;
+}
+.dian{
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom:30px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.dian li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:2px solid #ccc;
+    background: rgba(255,255,255,0.2);
+    box-sizing: border-box;
+}
+li.active{
+    background:#fff;
+}
+.xianlu{
+    width: 1200px;
+    height: 830px;
+    margin: 0 auto;
+    position: relative;
+}
+.title{
+    left: 0px;
+    top: 76px;
+    position: absolute;
+    z-index: 117;
+    width: 1200px;
+    height: 101px;
+}
+.titlebox{
+    overflow-wrap: break-word;
+    padding: 20px;
+    border-color: transparent;
+    border-width: 0px;
+    height: 61px;
+    width: 1160px;
+    display: block;
+    border-style: solid;
+}
+.center{
+    line-height: 140%;
+    text-align: center;
+}
+.center span:nth-child(1){
+    color: rgb(220, 220, 220);
+    line-height: 52%;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.center span:nth-child(1) strong{
+    font-size: 60px;
+}
+.center span:nth-child(2){
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: rgb(20, 20, 20);
+    line-height: 52%;
+}
+.tubox{
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 177px;
+    left: 0;
+}
+.leftbox{
+    width: 584px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+.leftbox a{
+    width: 100%;
+    height: 580px;
+}
+.leftbox a img{
+    width: 584px;
+    height: 580px;
+}
+.leftbox a img.active{
+    transform: scale(1.1);
+}
+.rightbox{
+    width: 586px;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rightbox li{
+    width: 278px;
+    height: 275px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.rightbox li a{
+    width: 100%;
+    height: 100%;
+}
+.rightbox li a img{
+    width: 278px;
+    height: 275px;
+}
+.rightbox li a img.active{
+    transform: scale(1.1);
+}
+.yuanbox{
+    z-index: 123;
+    width: 96px;
+    height: 96px;
+    position: absolute;top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.yuan{
+    padding: 18px;
+    height: 56px;
+    width: 56px;
+    text-align: center;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+.yuan p{
+    line-height: 140%;
+}
+.yuan p span{
+    color:#fff;
+    font-size: 20px;
+    line-height: 140%;
+}
+.about-us{
+    width: 100%;
+    height: 565px;
+    background: url(../img/bg.jpg) fixed center;
+    position: relative;
+    left:0;
+    top:0;
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+}
+.textbox{
+    width: 50%;
+    height: auto;
+    float: right;
+    padding-top:100px;
+}
+.textbox>span{
+    color:#fff;
+    margin-bottom: 30px;
+    font-size: 28px;
+    display: block;
+}
+.textbox p{
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+.textbox p span{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 228%;
+}
+.textbox p:nth-child(3) span{
+    line-height: 140%;
+    display: block;
+    /*margin-bottom: 10px;*/
+}
+.more{
+    margin-top:30px;
+}
+.more a{
+    width: 125px;
+    height: 37px;
+    line-height: 37px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: rgba(50,170,214,1);
+    border-radius: 5px;
+    float: left;
+}
+.more a:nth-child(2){
+    width: 140px;
+}
+.more a span{
+    color:#fff;
+}
+.news{
+    width: 1200px;
+    height: 730px;
+    position: relative;
+    margin:0 auto;
+}
+.imgbox{
+    width: 1200px;
+    height: 282px;
+    position: absolute;
+    top: 171px;
+    left: 0;
+    margin-bottom: 20px;
+}
+.imgbox img{
+    width: 1200px;
+    height: 282px;
+}
+.newsbox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:473px;
+    left:0;
+}
+.newsbox li{
+    width: 380px;
+    height: auto;
+}
+.newsbox li p{
+    margin-bottom: 5px;
+}
+.newsbox li p a{
+    line-height: 140%;
+    font-size: 16px;
+    color:#000;
+    font-weight: bold;
+}
+.newsbox li p time{
+    display: block;
+    font-size: 14px;
+    padding-top: 8px;
+    color: #a8a8a8;
+    line-height: 140%;
+}
+.artic{
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 8px;
+    color: #888888;
+    line-height: 140%;
+    height: 100px;
+    border-color: transparent transparent rgb(234, 234, 234);
+    border-width: 0px 0px 1px;
+    border-style: dotted;
+}
+.line{
+    margin-bottom: 30px;
+}
+.view{
+    color:#ccc;
+    font-weight: bold;
+    font-size: 14px;
+}

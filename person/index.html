@@ -1,180 +1,277 @@
-<!doctype html>
-<html lang="en">
+<html style="overflow: hidden; height: 100%;">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="web前端，F2E，web前端个人简历，前端开发">
+    <meta name="description" content="刘晓宇的web前端工程师个人简历">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/shange.css">
-
+    <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/index.css">
+    <title>个人主页</title>
 </head>
-<style>
-
-
-</style>
-<body>
-<div id="main">
-    <div id="menu">
-        <div class="container topinner">
-            <div class="logo">
-                <div class="logoinner">
-                    <div>&#xe739;</div>
-                    Princess
+<body style="overflow: hidden; height: 100%; font-size: 80.24%;" class="fp-viewing-page1">
+<!-- header navigation -->
+<div id="header" style="opacity: 0.3;"></div>
+<header style="opacity: 1;">
+    <div id="logo">
+        <!-- <div id="header_img"><img src="image/logo.jpg" alt=""></div> -->
+        <div id="header_p">
+            <p id="header_p1">lxy</p>
+            <p id="header_p2">个人主页</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#page1" class="selected">首页</a></li>
+            <li><a href="#page2">关于我</a></li>
+            <li><a href="#page3">专业技能</a></li>
+            <li><a href="#page4">我的作品</a></li>
+            <li><a href="#page5">联系我</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- header navigation end -->
+<!-- aside navigation -->
+<aside style="top: 236px; display: block;">
+    <a href="#page1" class="selected"><b style="display: none;">首页</b></a>
+    <a href="#page2" class=""><b>关于我</b></a>
+    <a href="#page3" class=""><b>专业技能</b></a>
+    <a href="#page4" class=""><b style="display: none;">我的作品</b></a>
+    <a href="#page5" class=""><b>联系我</b></a>
+</aside>
+<!-- aside navigation end -->
+<!-- home page -->
+<div id="dowebok" class="fullpage-wrapper"
+     style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px); transition: all 400ms ease;">
+    <!-- home -->
+    <div class="section one fp-section active" data-anchor="page1" style="height: 662px;">
+        <div id="home" class="home_zoom" style="display: block;">
+            <div id="home_content" style="padding-top: 79.5px;">
+                <div id="home_head" style="margin-top: 100px;">
+                    <div id="home_head_content">
+                       <img src="image/photo1.jpg" id="home_photo1" alt="">
+                         <!-- <img src="image/photo2.jpg" id="home_photo2" alt="" style="opacity: 0;"> -->
+                    </div>
+                </div>
+                <div id="home_info">
+                    <p id="home_info1" style="display: block;">用写代码的激情面对生活,在生活的智慧中充实代码。</p>
+                    <div id="home_info_box" style="width: 800px;">
+                        <p id="home_info2" style="display: block;">我叫刘晓宇</p>
+                        <p id="home_info3" style="display: block;">24岁</p>
+                        <p id="home_info4" style="display: block;">一名前端工程师</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- home end -->
+    <!-- about -->
+    <div class="section two fp-section" data-anchor="page2" style="height: 662px;">
+        <div id="about">
+            <div id="about_content" style="padding-top: 25.3333px;">
+                <div class="title">
+                    <h1>关于我</h1>
+                </div>
+                <div id="about_list_content">
+                    <div class="about_list" id="about_list1">
+                        <div class="about_list_eg" id="about_en_edu">education</div>
+                        <div class="about_list_cn" id="about_cn_edu">学历<p>本科</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_age">age</div>
+                        <div class="about_list_cn" id="about_cn_age">年龄<p>24岁</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_loc">location</div>
+                        <div class="about_list_cn" id="about_cn_loc">坐标<p>太原</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_sta">status</div>
+                        <div class="about_list_cn" id="about_cn_sta">状态<p>离职</p></div>
+                    </div>
+                </div>
+                <div id="about_info" style="width: 800px; margin-top: 0px; margin-bottom: 0px;"><p style="bottom: 0px;">
+                    大学所修专业：计算机科学与技术，使我对软件产生浓厚兴趣。</p>
+                    <p style="bottom: 0px;">学习使我快乐，代码使我快乐。</p>
+                    <p style="bottom: 0px;">html css js jq</p>
+                    <p style="bottom: 0px;">利用框架开发,更加高效。</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+    <!-- skill -->
+    <div class="section three fp-section" data-anchor="page3" style="height: 662px;">
+        <div id="skill">
+            <div id="skill_content" style="padding-top: 25.3333px;">
+                <div class="title">
+                    <h1>专业技能</h1>
+                </div>
+                <div id="skill_info"><p>前端的学习需要坚持不懈，知识深度与广度都很重要。而前端开发的重中之重就是原生javascript的理解，再结合模块化，组件化，工程化，可以更加高效的完成开发。</p>
+                </div>
+                <div id="skill_list">
+                    <section>
+                        <div class="canvasbox">
+                            <canvas id="can1" width="200" height="200"></canvas>
+                            <div class="textbox">
+                                html
+                            </div>
+                        </div>
+                        <div class="canvasbox">
+                            <canvas id="can2" width="200" height="200"></canvas>
+                            <div class="textbox">
+                                css
+                            </div>
+                        </div>
+                        <div class="canvasbox">
+                            <canvas id="can3" width="200" height="200"></canvas>
+                            <div class="textbox">
+                                js
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skill end -->
+    <!-- experience -->
+
+    <!-- experience end -->
+    <!-- demo -->
+    <div class="section five fp-section" data-anchor="page4" style="height: 662px;">
+        <div id="demo">
+            <div id="demo_content" style="padding-top: 36.8333px;">
+                <div class="title">
+                    <h1>我的作品</h1>
+                </div>
+                <div id="demo_content_list">
+                    <ul class="demo_box">
+                        <li class="demo_scale b_to_t">
+                            <div class="demo_box_content">
+                                <div class="demo_box_hover">
+                                    <p class="demo_box_title">移动端</p>
+                                    <span class="demo_box_hover_icon">
+                                        <a href="http://jingktv.duapp.com" target="_blank" class="demo_box_link">
+                                            <img src="image/demo-link.png" alt="">
+                                        </a>
+                                    </span>
+                                </div>
+                                <img src="image/demo_box1.jpg" alt="" class="demo_box_bg">
+                            </div>
+                        </li>
+                        <li class="demo_scale b_to_t">
+                            <div class="demo_box_content">
+                                <div class="demo_box_hover">
+                                    <p class="demo_box_title">PC端</p>
+                                    <span class="demo_box_hover_icon">
+										<a href="http://cjzsql.duapp.com" target="_blank" class="demo_box_link">
+											<img src="image/demo-link.png" alt="">
+										</a>
+									</span>
+                                </div>
+                                <img src="image/demo_box2.jpg" alt="" class="demo_box_bg">
+                            </div>
+                        </li>
+                        <li class="demo_scale b_to_t">
+                            <div class="demo_box_content">
+                                <div class="demo_box_hover">
+                                    <p class="demo_box_title">小游戏</p>
+                                    <span class="demo_box_hover_icon">
+                                    	<a href="http://zpersonal.duapp.com" target="_blank" class="demo_box_link">
+											<img src="image/demo-link.png" alt="">
+                                        </a>
+                                    </span>
+                                </div>
+                                <img src="image/demo_box3.jpg" alt="" class="demo_box_bg">
+                            </div>
+                        </li>
+                        <li class="demo_scale b_to_t">
+                            <div class="demo_box_content">
+                                <div class="demo_box_hover">
+                                    <p class="demo_box_title">便签</p>
+                                    <span class="demo_box_hover_icon">
+                                    	<a href="http://instantmessage.duapp.com" target="_blank" class="demo_box_link">
+											<img src="image/demo-link.png" alt="">
+                                        </a>
+                                    </span>
+                                </div>
+                                <img src="image/demo_box4.jpg" alt="" class="demo_box_bg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="demo_info" class="demo_scale b_to_t">
+                    <p>这是我的部分demo。</p>
+                    <p>更多demo请移步<a href="#" class="md-trigger" data-modal="modal-3">这里</a>。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- demo end -->
+    <!-- contact -->
+    <div class="section six fp-section" data-anchor="page5" style="height: 662px;">
+        <div id="contact">
+            <div id="contact_content">
+                <div class="title">
+                    <h1>联系我</h1>
+                </div>
+                <div id="contact_head">
+                    <div id="contact_head1" class="b_to_t">灵感 代码 梦想 未来</div>
+                    <div id="contact_head2">
+                        <span class="fade_in">inspiration</span>
+                        <span class="fade_in">code</span>
+                        <span class="fade_in">dream</span>
+                        <span class="fade_in">future</span>
+                    </div>
+                </div>
+                <div id="contact_info" class="contact_scale fade_in">
+                    <ul>
+                        <li>学习是一个充实愉悦的过程</li>
+                        <li>用代码实现各种效果是一种奇妙的体验</li>
+                        <li>载着梦想，杨帆起航</li>
+                        <li>我准备好了！</li>
+                    </ul>
+                </div>
+                <div id="contact_way">
+                    <div class="contact_message">
+                    联系我<br>
+                    18334783016
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact end -->
+</div>
+<!-- home page end -->
+<!-- pop layer -->
+<div class="md-modal md-effect-11" id="modal-3">
+    <div class="md-content">
+        <h3>小作品</h3>
+        <div class="modal-example" style="margin-left: -15px">
             <ul>
-                <li><a href="#p1" data-menuanchor="p1">Home</a></li>
-                <li><a href="#p2" data-menuanchor="p2">Home</a></li>
-                <li><a href="#p3" data-menuanchor="p3">Home</a></li>
+                <li><span><a href="Gobang/index.html" target="_blank">五子棋</a></span></li>
+                <li><span><a href="dzyx/dz.html" target="_blank">打字游戏</a></span></li>
+                <li><span><a href="zp/5.26zp.html" target="_blank">纸牌游戏</a></span></li>
+                <li><span><a href="hb/index.html" target="_blank">Canvas</a></span></li> 
+                <li><span><a href="https://304069550.github.io/blog/" target="_blank">个人博客</a></span></li>
             </ul>
-                <!--<div class="search">
-                    <input type="text" class="text" placeholder="Search this site">
-                    <span class="searbtn">
-                        <a href="">
-                            <div>&#xe605;</div>
-                        </a>
-                    </span>
-                </div>-->
-        </div>
-    </div>
-    <div class="section container-fluid bg1">
-        <div class="container">
-            <h1 class="text1">Welcome To MyHomePage</h1>
-        </div>
-    </div>
-    <div class="section container-fluid bg2">
-        <div class="container">
-            <div class="List">
-                <div class="item1 item">
-                    <h2>PC端网页</h2>
-                    <div class="img1"></div>
-                </div>
-                <div class="item2 item">
-                    <h2>移动端网页</h2>
-                    <div class="img2"></div>
-                </div>
-                <div class="item3 item">
-                    <h2>响应式</h2>
-                    <div class="img3"></div>
-                </div>
-                <div class="item4 item">
-                    <h2>小游戏</h2>
-                    <div class="img4"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="slide box1">
-            <div class="bannertu"></div>
-        </div>
-        <div class="slide box2">
-            <div class="bannertu"></div>
-        </div>
-        <div class="slide box3">
-            <div class="bannertu"></div>
+            <button class="md-close" style="margin-left: 260px">明白了</button>
         </div>
     </div>
 </div>
-<!--
-<div class="container-fluid">
-    <section class="con">
-        <div class="container">
-            <div class="row row1">
-                <p><span>Features</span></p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    &lt;!&ndash;<div class="tu1"></div>&ndash;&gt;
-                    <canvas id="can1" width="75" height="75"></canvas>
-                    <div class="jieshao">
-                        <h4>Responsive Design</h4>
-                        <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receivean update when new items arrive!</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tu1"></div>
-                    <div class="jieshao">
-                        <h4>Responsive Design</h4>
-                        <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receivean update when new items arrive!</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tu1"></div>
-                    <div class="jieshao">
-                        <h4>Responsive Design</h4>
-                        <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receivean update when new items arrive!</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tu1"></div>
-                    <div class="jieshao">
-                        <h4>Responsive Design</h4>
-                        <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receivean update when new items arrive!</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tu1"></div>
-                    <div class="jieshao">
-                        <h4>Responsive Design</h4>
-                        <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receivean update when new items arrive!</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tu1"></div>
-                    <div class="jieshao">
-                        <h4>Responsive Design</h4>
-                        <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receivean update when new items arrive!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row row1">
-                <p><span>Developed</span></p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3 info">
-                    <div class="image">
-                        <div class="img"></div>
-                        <div class="mask">
-                            <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receive an update when new items arrive! </p>
-                            <p>FKDJF DSHJF</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 info">
-                    <div class="image">
-                        <div class="img"></div>
-                        <div class="mask">
-                            <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receive an update when new items arrive! </p>
-                            <p>FKDJF DSHJF</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 info">
-                    <div class="image">
-                        <div class="img"></div>
-                        <div class="mask">
-                            <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receive an update when new items arrive! </p>
-                            <p>FKDJF DSHJF</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 info">
-                    <div class="image">
-                        <div class="img"></div>
-                        <div class="mask">
-                            <p>Want more Bootstrap themes & templates? Subscribe to our mailing list to receive an update when new items arrive! </p>
-                            <p>FKDJF DSHJF</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>-->
-</body>
-<script src="js/jQuery1.10.2.js"></script>
-<script src="js/jquery.fullpage.js"></script>
+<div class="md-overlay"></div>
+<!-- pop layer -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cssParser.js"></script>
+<script src="js/modalEffects.js"></script>
 <script src="js/index.js"></script>
+
+</body>
 </html>

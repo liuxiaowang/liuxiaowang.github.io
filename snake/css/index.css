@@ -1,0 +1,47 @@
+.scene{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    margin:0 auto;
+    background: #fffa5f;
+}
+.block{
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    float: left;
+}
+.snackbody{
+    background:green;
+}
+.snackhead{
+    background: url(../img/260ff64ebd478eb3bacf53193009d307.png) no-repeat;
+    background-size: cover;
+}
+.food{
+    background: url(../img/260.png) no-repeat;
+    background-size: cover;
+}
+.box{
+    width:500px;
+    height: 600px;
+    margin:0 auto;
+}
+.top{
+    width: 460px;
+    height: 100px;
+    background: #05c6b4;
+    border: 1px solid #05c6b4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 100px;
+    padding: 0 20px;
+}
+#start,#zan{
+    margin-right: 30px;
+}
+.mask{
+    width: 500px;
+    height: 500px;
+    background: rgba(0,0,0,0.8);
+}

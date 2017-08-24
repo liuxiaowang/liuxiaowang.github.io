@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.title{
+    width: 766px;
+    height: 61px;
+    margin:0 auto;
+    border-top:1px solid rgb(229, 229, 229);
+    padding:0 15px;
+}
+.title ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.title ul li{
+    width: 33.333%;
+    height: 50px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.title ul li.active{
+    border-bottom: 1px solid #1298FA;
+}
+.title ul li a{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color:#333;
+}
+.title ul li a.active{
+    color: #1298FA;
+}
+.jieshao{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    padding:50px 0;
+    border-bottom: 1px dotted #8f8f8f;
+}
+.jieshao ul{
+    width: 100%;
+    height: 180px;
+}
+.imgbox{
+    width: 270px;
+    height: 180px;
+    float: left;
+    margin-right: 25px;
+}
+.imgbox a{
+    width: 100%;
+    height: 100%;
+}
+.imgbox a img{
+    width: 270px;
+    height: 180px;
+}
+.introbox{
+    width: auto;
+    height: 180px;
+    margin-left: 295px;
+}
+.out{
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    line-height: 140%;
+}
+.out:hover{
+    color: #1298FA;
+}
+.time{
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+    color: #999999;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 140%;
+}
+.con{
+    font-size: 14px;
+    padding-top: 8px;
+    color: #888888;
+    line-height: 140%;
+}
+.xiangxi{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    padding-top:30px;
+}
+.xiangxi ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.xiangxi ul li{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #8f8f8f;
+    width: 100%;
+    height: 66px;
+    margin: 10px 0;
+}
+.riqi{
+    background: #32aad6;
+    width: 65px;
+    height: 65px;
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+    color: #fff;
+}
+.day{
+    color: #fff;
+    font-size: 18px;
+    height: 41px;
+    line-height: 41px;
+    font-weight: bold;
+    display: inline-block;
+}
+.date{
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+.right{
+    width: auto;
+    height: 100%;
+    margin-left: 115px;
+}
+.right p{
+    color: #999;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+.rtitle a{
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    line-height: 140%;
+}
+.rtitle a:hover{
+    color: #1298FA;
+}
+.right .rabs{
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 6px;
+    color: #999999;
+    line-height: 140%;
+}
+.pageitem{
+    width: 100%;
+    height: 30px;
+    /*margin-left: 240px;*/
+    text-align: center;
+    line-height: 30px;
+}
+.pageitem a{
+    border: 1px solid #000;
+    padding: 2px 5px;
+    margin: 2px;
+    color: #000;
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+}
+.pageitem a.active{
+    background: #000;
+    color:#fff;
+}

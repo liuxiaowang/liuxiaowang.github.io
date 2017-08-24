@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    overflow: hidden;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+.left{
+    width: 460px;
+    height:auto;
+    float: left;
+    margin-right: 30px;
+}
+.ltitle{
+    width: 460px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+.ltitle span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 140%;
+}
+.lbox{
+    height: 360px;
+    width: 460px;
+}
+.lbox p{
+    line-height: 140%;
+}
+.lbox p span{
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    line-height: 220%;
+}
+.lbox p span strong{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    line-height: 220%;
+}
+.lbox p.margin{
+    margin-bottom: 15px;
+}
+.right{
+    width: auto;
+    height: auto;
+    margin-left: 490px;
+}
+.rbox{
+    width: 100%;
+    height: auto;
+}
+.rbox ul{
+    width: 100%;
+    float: left;
+}
+.rbox ul li{
+    width: 50%;
+    margin-bottom: 5px;
+    float:left;
+}
+.name{
+    font-size: 14px;
+    color: #5a5a5a;
+    float: left;
+    padding: 10px 0;
+    line-height: 1.5;
+    width: 100%;
+}
+.red{
+    color: #f00;
+    line-height: 100%;
+    padding-left: 3px;
+}
+.input{
+    width: 320px;
+    height: 43px;
+    float: left;
+}
+.input input{
+    height: 40px;
+    line-height: 40px;
+    background-color: #eeeeee;
+    font-size: 14px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #e5e5e5;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    width: 100%;
+}
+.input select{
+    height: 40px;
+    line-height: 40px;
+    background-color: #eeeeee;
+    font-size: 14px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #e5e5e5;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    width: 100%;
+}
+.submit{
+    width: 322px;
+    margin-top: 16px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    background: #0195cc;
+}

@@ -1,0 +1,278 @@
+body,ul{
+    margin:0;padding:0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    user-select: none;
+}
+input,p{
+    margin:0;padding:0;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 381963 */
+    src: url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.eot');
+    src: url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.svg#iconfont') format('svg');
+}
+section.leftbar{
+    width: 200px;
+    height: 100%;
+    background:#333;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.leftbar h3{
+    color:#fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.leftbar ul li{
+    height: 30px;
+    color:#fff;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.leftbar ul li:hover{
+    color:#eee;
+}
+.leftbar ul li:first-child:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: orange;
+    float: left;
+    margin:5px 10px;
+
+}
+.leftbar ul li:last-child:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: darkcyan;
+    float: left;
+    margin:5px 10px;
+}
+.main{
+    width: auto;
+    height: 100%;
+    margin-left: 200px;
+    background-image: repeating-linear-gradient(to right bottom,#ccc 0,#ccc 5px,#fff 0,#fff 30px);
+    position: relative;
+}
+.main .container{
+    width: 500px;
+    height:400px;
+    border:1px solid #fffa5f;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;bottom:0;
+    margin:auto;
+    background: #fff;
+    border-radius: 25px;
+    border:3px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(51,51,51,0.76),3px 1px 0 0 #999,3px 2px 0 0 #999,3px 3px 0 0 #999,3px 4px 0 0 #fff,3px 5px 0 0 #999,3px 6px 0 0 #fff;
+}
+.container .wait,.done{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+}
+.container .add{
+    width: 100%;
+    height: 100%;
+    /*background: red;*/
+    padding-top: 100px;
+    position: relative;
+    /*display: none;*/
+
+}
+.container .add h3{
+    color: #333;
+    text-align: center;
+    margin:20px;
+    /*position: relative;*/
+}
+.container .add textarea{
+    width: 300px;
+    height:100px;
+    display: block;
+    margin:10px auto;
+    font-size: 16px;
+    resize: none;
+    padding:10px;
+    box-sizing: border-box;
+
+}
+.wait{
+    /*display: block !important;*/
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    display: block;
+    border: none;
+    margin: 20px auto;
+    background:orange;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.btn:active{
+    background: orange;
+    box-shadow: 0px 0px 5px #333;
+    color: #aaa;
+    outline: none;
+    opacity: 0.8;
+}
+.container .add label{
+    width: 300px;
+    height:100px;
+    display: block;
+    margin:10px auto;
+    position:relative;
+}
+.container .add label .notice{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    /*background: red;*/
+    line-height: 30px;
+    color: #333;
+    font-size: 20px;
+}
+.notice span{
+    font-size: 16px;
+
+}
+.container .add .close{
+    position: absolute;
+    right: 30px;
+    top:30px;
+    font-family:"iconfont";
+    cursor: pointer;
+    font-size: 30px;
+}
+.item h3{
+    /*background: red;*/
+    text-align: center;
+    color: #333;
+    margin:20px;
+    height: 20px;
+    position: relative;
+}
+.item h3 i{
+    position: absolute;
+    width: 20px;
+    height:20px;
+    right:20px;
+    font-family: "iconfont";
+
+}
+.item ul{
+    width:100%;
+    height: 280px;
+    background: #ccc;
+    overflow: auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.item ul li{
+    width: 100%;
+    height: 30px;
+    /*background: red;*/
+    /*border: 1px solid #ccc;*/
+    box-sizing: border-box;
+
+}
+
+.item ul li input{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 7px;
+    cursor: pointer;
+}
+.item ul li p{
+    width: 270px;
+    height: 30px;
+    /*background: blue;*/
+    float: left;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item ul li time{
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 14px;
+    /*text-align: center;*/
+}
+.item ul li time i{
+    font-family: "iconfont";
+    font-size: 25px;
+    font-style: normal;
+    line-height: 30px;
+    display: block;
+    float: left;
+    /*color:red;*/
+}
+.item ul li>i{
+    float: left;
+    font-style:normal;
+    font-family: "iconfont";
+    width: 25px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.item ul li>i.active{
+    color:orange;
+}
+.item .bottom{
+    width: 100%;
+    height: 60px;
+    /*background: red;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*line-height: 80px;*/
+}
+.item .bottom .btn{
+    margin:0;
+}
+.item .bottom .addbtn{
+    background: darkcyan;
+}
+.item .bottom .movebtn{
+    background: orange;
+}
+.item .bottom .clearbtn{
+    background: orange;
+}

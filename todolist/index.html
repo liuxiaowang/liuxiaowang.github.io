@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jQuery1.10.2.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<section class="leftbar">
+    <h3>ToDoList</h3>
+    <ul>
+        <li>查看待办事项</li>
+        <li>查看已完成事项</li>
+    </ul>
+</section>
+<div class="main">
+    <div class="container">
+        <div class="add item">
+            <h3>添加新事项</h3>
+            <label>
+                <textarea autofocus id="text"></textarea>
+                <div class="notice"><span>00</span>/40</div>
+            </label>
+            <input type="button" value="提交" id="submit" class="btn">
+            <div class="close iconfont icon-guanbi"></div>
+        </div>
+        <div class="wait item">
+            <h3>未完成 <i class="iconfont icon-pin"></i></h3>
+            <ul>
+            </ul>
+            <div class="bottom">
+                <input type="button" value="移动到已完成" class="btn movebtn">
+                <input type="button" value="添加" class="btn addbtn">
+            </div>
+
+        </div>
+        <div class="done item">
+            <h3>已完成 <i class="iconfont icon-pin"></i></h3>
+            <ul>
+            </ul>
+            <div class="bottom">
+                <input type="button" value="删除" class="btn clearbtn">
+                <input type="button" value="添加" class="btn addbtn">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
