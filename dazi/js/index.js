@@ -1,13 +1,13 @@
 class Game{
     constructor(left,scor,state,life,startbtn,phb){   //构造函数
         this.left=left;
-        this.num=5;
+        this.num=3;
         this.obj={};
         this.scor=scor;
         this.scornum=0;
         this.state=state;
         this.statenum=1;
-        this.speed=5;
+        this.speed=3;
         this.height=window.innerHeight;
         this.life=life;
         this.lifenum=5;
@@ -35,6 +35,8 @@ class Game{
         do{
             let randomNum=Math.floor(Math.random()*26)+65;
             var randomLetter=String.fromCharCode(randomNum);
+            // newdiv.style.backgroundImage="url(img/caipao.psd)";
+
         }while(this.obj[randomLetter]);
 
 
@@ -91,7 +93,7 @@ class Game{
                 this._createLetter();
                 this.scornum++;
                 this.scor.innerHTML=this.scornum;
-                if(this.scornum%10==0){
+                if(this.scornum%5==0){
                     this._upstate();
                 }
             }
@@ -104,7 +106,10 @@ class Game{
         if(this.statenum<4){
             this._createLetter();
         }else{
-            this.speed++;
+            // this.speed++;
+            if(!(this.statenum%3)) {
+                this.speed+=2;
+            }
         }
 
     }

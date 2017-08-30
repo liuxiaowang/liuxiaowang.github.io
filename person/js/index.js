@@ -30,6 +30,7 @@ $(function(){
             cobj.clearRect(-width/2,-height/2,width,height);
             cobj.beginPath();
             cobj.arc(0,0,width*0.4,-Math.PI/2,angle*Math.PI/180-Math.PI/2);
+            cobj.lineCap="round";
             cobj.fillText(Math.round(angle/360*100)+"%",0,0)
             cobj.stroke();
             if(angle>=maxAngle){
