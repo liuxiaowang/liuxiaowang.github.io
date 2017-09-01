@@ -15,7 +15,7 @@ $(function(){
         });
     })
 //点击提交
-    $("#submit").click(function(){
+    /*$("#submit").click(function(){
         var val=$("#text").val();
         if(val==""){
             alert("请输入内容");
@@ -31,6 +31,19 @@ $(function(){
         $(".notice span").text("00");
         reWrite();
 
+    })*/
+    $("#submit").click(function(){
+        var val=$("#text").val();
+        if(val==""){
+            alert("请输入内容");
+            return;
+        }
+        $.get("insert.php",{val:val,isDone:false,isStar:false,isDel:false},function(r){
+            if(r==1){
+                alert("添加成功");
+                reWrite();
+            }
+        })
     })
 //获取信息的函数
     function getData(){
@@ -50,7 +63,7 @@ $(function(){
         var data=getData();
         var str1="",str2="";
         $.each(data,function(index,val){
-            if(val.isDone==false){
+            if(val.isDone=='false'){
                 str1+=`<li id="${index}">
                     <input type="checkbox">
                     <p>${val.text}</p>
@@ -112,6 +125,7 @@ $(function(){
         $(".wait ul li").each(function(index,ele){
             if($(this).find("input").prop("checked")){
                 var index=$(this).attr("id");
+                
                 data[index].isDone=true;
             }
         })
